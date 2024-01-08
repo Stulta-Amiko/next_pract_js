@@ -18,6 +18,8 @@
   "plugins": ["react"],
   "rules": {
     "quotes": ["error", "single"], // 더블 쿼터 사용
+    "jsx-quotes":["error","prefer-single"],
+    "semi": ["error","never"],
     "no-unused-vars": "off", // 사용안한 변수 경고 중복
     "jsx-a11y/control-has-associated-label": "off", // 상호작용하는 엘리먼트에 label을 넣는다
     "react/no-array-index-key": "off", // key값으로 index를 사용할수 있다.
@@ -33,8 +35,9 @@
     "react/react-in-jsx-scope": "off", // jsx를 사용하여도 React를 꼭 import 하지 않아도 된다.
     "react/jsx-props-no-spreading": "off", // props를 스프래드 할 수 있다.
     "jsx-a11y/anchor-is-valid": "off", // next js에서는 a에 href없이 사용
-    "global-require": "off", // 함수 내에서 require 사용가능
+    "global-require": "off", // 수 내에서 require 사용가능
     "jsx-a11y/label-has-associated-control": "off", // label은 항상 control이 없어도 된다.
+    "react/function-component-definition":[2, { "namedComponents": "arrow-function" }],
     "react/jsx-curly-newline": "off", // 새 라인에 {} 사용 가능하다.
     "react/jsx-filename-extension": [
       1,

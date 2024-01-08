@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 
 const App = () => {
   const [userName, setUserName] = useState('')
-  const router = useRouter()
   return (
     <div>
       <label>
